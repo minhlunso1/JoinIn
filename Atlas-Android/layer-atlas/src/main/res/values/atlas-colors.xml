@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2015 Layer. All rights reserved.
+    
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+        
+          http://www.apache.org/licenses/LICENSE-2.0
+          
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.    
+-->
+<resources>
+
+    <color name="joinin_colorPrimary_1">#CC5C258D</color>
+    <color name="joinin_colorPrimary_2">#CC4389A2</color>
+    <color name="joinin_colorPrimary_origin1">#5C258D</color>
+    <color name="joinin_colorPrimary_origin2">#4389A2</color>
+
+    <color name="atlas_color_primary_blue">#FF21AAE1</color>
+    <color name="atlas_color_dark_blue">#FF198BB8</color>
+    <color name="atlas_color_primary_gray">#FFEBEBEB</color>
+
+    <color name="atlas_status_bar_background">@color/atlas_color_dark_blue</color>
+    <color name="atlas_action_bar_background">@color/atlas_color_primary_blue</color>
+    <color name="atlas_window_background">@android:color/white</color>
+    <color name="atlas_navigation_bar_background">@android:color/black</color>
+    <color name="atlas_delete_background">#FFFF5252</color>
+    <color name="atlas_item_background">@android:color/white</color>
+
+    <color name="atlas_floating_button">@color/atlas_color_primary_blue</color>
+
+    <color name="atlas_text_black">@android:color/black</color>
+    <color name="atlas_text_gray">#FF757575</color>
+    <color name="atlas_text_white">@android:color/white</color>
+    <color name="atlas_text_blue">@color/atlas_color_primary_blue</color>
+
+    <color name="atlas_button_text_enabled">@android:color/black</color>
+    <color name="atlas_button_text_disabled">#42000000</color>
+    <color name="atlas_button_text_pressed">@color/atlas_color_primary_blue</color>
+
+    <color name="atlas_item_leavebehind">#85f42020</color>
+    <color name="atlas_item_swiping">#E0FFFFFF</color>
+
+    <color name="atlas_item_selected">#FFD8D8D8</color>
+    <color name="atlas_item_divider">#FFE0E0E0</color>
+
+    <color name="atlas_view_divider">#FFE0E0E0</color>
+
+    <color name="atlas_dialog_primary">@color/atlas_color_primary_blue</color>
+    <color name="atlas_dialog_accent">@color/atlas_color_primary_blue</color>
+
+    <color name="atlas_avatar_background">#14000000</color>
+    <color name="atlas_avatar_border">@android:color/white</color>
+    <color name="atlas_avatar_text">@android:color/black</color>
+    <color name="atlas_chip_background">@color/atlas_color_primary_gray</color>
+
+    <color name="atlas_cell_them_background">@color/atlas_color_primary_gray</color>
+    <color name="atlas_cell_me_background">@color/atlas_color_primary_blue</color>
+
+    <color name="atlas_icon_enabled">#8A000000</color>
+    <color name="atlas_icon_disabled">#3D000000</color>
+    <color name="atlas_delete_icon">@android:color/white</color>
+
+    <color name="atlas_image_popup_background">@android:color/black</color>
+</resources>

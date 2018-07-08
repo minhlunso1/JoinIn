@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">JoinIn</string>
+
+    <string name="walkthrText1"><b>Xin chào</b> \n Cùng đăng nhập để tham gia với người có cùng sở thích với bạn.</string>
+    <string name="walkthrText2"><b>Khám phá</b> \n Khám phá những sự kiện bất ngờ xung quanh.</string>
+    <string name="walkthrText3"><b>Tìm kiếm</b> \n Tìm kiếm bạn bè xung quanh cùng với JoinIn.</string>
+    <string name="walkthrText4"><b>Tham gia</b> \n Tham gia cùng với những người bạn mới. Tất cả chỉ trong vài cú nhấp!</string>
+
+    <string name="Message">TIN NHẮN</string>
+    <string name="Message_">Gửi Tin Nhắn</string>
+    <string name="Favorite">Ưa thích</string>
+    <string name="Status">Bài viết:</string>
+    <string name="Name">Tên bạn</string>
+    <string name="Intro">Sơ lượt</string>
+    <string name="Interests">Sở thích</string>
+    <string name="RA">Hoạt động gần đây</string>
+    <string name="hint1">Bạn đang làm gì?</string>
+    <string name="hint2">Bạn đang ở đâu?</string>
+    <string name="Done">Xong</string>
+    <string name="Cancel">Hủy</string>
+    <string name="google_play_services_issue">Vui lòng cập nhật dịch vụ Google của bạn</string>
+    <string name="Please_get_another_location">Vui lòng chọn địa điểm khác</string>
+    <string name="Edit">Đổi thông tin</string>
+    <string name="Save_changes">SAVE CHANGES</string>
+
+    <string name="filter">Lọc</string>
+    <string name="Me">Tôi</string>
+    <string name="here">ở đây</string>
+    <string name="Chat_history">Tin nhắn</string>
+    <string name="Favourite">Ưa thích</string>
+    <string name="Unfavourite">Bỏ ưa thích</string>
+    <string name="My_profile">Thông tin của bạn</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in_facebook">Đăng nhập với Facebook</string>
+    <string name="the_terms_and_privacy_policy"> các Điều khoản về quyền riêng tư</string>
+    <string name="by_signing_in">Khi đăng nhập, tôi đồng ý với</string>
+    <string name="change">Thay đổi</string>
+    <string name="log_out">Đăng xuất</string>
+
+    <string name="action_settings">Tùy chỉnh</string>
+    <string name="action_details">Tùy chỉnh</string>
+    <string name="action_sendlogs">Send Debug Info</string>
+
+    <string name="title_conversations_list">Conversations</string>
+    <string name="title_select_conversation">New Message</string>
+    <string name="title_messages_list">Messages</string>
+    <string name="title_settings">Tùy chỉnh</string>
+    <string name="title_conversation_details">Thông tin</string>
+
+    <string name="alert_message_resuming">Resuming Session</string>
+
+    <string name="alert_message_logout">Đăng xuất?</string>
+    <string name="alert_message_delete_message">Xóa tin nhắn?</string>
+    <string name="alert_message_delete_conversation">Xóa cuộc hội thoại?</string>
+
+    <string name="alert_dialog_logout">Logging Out&#8230;</string>
+
+    <string name="alert_button_cancel">Thoát</string>
+    <string name="alert_button_delete_my_devices">Chỉ riêng tôi</string>
+    <string name="alert_button_delete_all_participants">Cho tất cả mọi người</string>
+    <string name="alert_button_remove">Remove</string>
+    <string name="alert_button_block">Block</string>
+    <string name="alert_button_unblock">Unblock</string>
+    <string name="alert_button_logout">Đăng Xuất</string>
+
+    <string name="attachment_menu_camera">Máy ảnh</string>
+    <string name="attachment_menu_gallery">Thư viện ảnh</string>
+    <string name="attachment_menu_location">Vị trí</string>
+
+    <string name="toast_group_name_updated">Group name updated</string>
+    <string name="toast_failed_to_deauthenticate">Failed to deauthenticate: %1$s</string>
+    <string name="toast_copied_to_clipboard">Copied to clipboard</string>
+
+    <string name="conversation_details_title_options">Options</string>
+    <string name="conversation_details_hint_group_name">Group Name</string>
+    <string name="conversation_details_switch_show_notifications">Show Notifications</string>
+    <string name="conversation_details_button_leave_group">Leave Group</string>
+    <string name="conversation_details_title_participants">Participants</string>
+    <string name="conversation_details_button_add_participants">Add Participants</string>
+
+    <string name="settings_clipboard_description">Settings</string>
+    <string name="settings_content_connected">Connected</string>
+    <string name="settings_content_disconnected">Disconnected</string>
+    <string name="settings_content_app_version">Name %1$s / Code %2$d</string>
+    <string name="settings_content_android_version">Version %1$s / API level %2$d</string>
+    <string name="settings_content_disk_unlimited">Unlimited</string>
+    <string name="settings_content_disk_usage">%1$.2f %2$s</string>
+    <string name="settings_content_disk_gb">GB</string>
+    <string name="settings_content_disk_mb">MB</string>
+    <string name="settings_content_disk_kb">KB</string>
+    <string name="settings_content_disk_b">B</string>
+    <string name="settings_title_account">Account</string>
+    <string name="settings_button_log_out">Log Out</string>
+    <string name="settings_title_notifications">Notifications</string>
+    <string name="settings_switch_show_notifications">Show Notifications</string>
+    <string name="settings_title_debug">Debug</string>
+    <string name="settings_switch_verbose_logging">Verbose Logging</string>
+    <string name="settings_title_app_version">App Version</string>
+    <string name="settings_title_android_version">Android Version</string>
+    <string name="settings_title_atlas_version">Atlas Version</string>
+    <string name="settings_title_layer_version">Layer Version</string>
+    <string name="settings_title_user_id">User ID</string>
+    <string name="settings_title_statistics">Statistics</string>
+    <string name="settings_title_conversations">Conversations</string>
+    <string name="settings_title_messages">Messages</string>
+    <string name="settings_title_unread_messages">Unread Messages</string>
+    <string name="settings_title_rich_content">Rich Content</string>
+    <string name="settings_title_disk_utilization">Disk Utilization</string>
+    <string name="settings_title_disk_allowance">Disk Allowance</string>
+    <string name="settings_title_auto_download_types">Auto-Download MIME Types</string>
+
+    <string name="notifications_num_more">+%1$d thêm</string>
+    <string name="notifications_new_messages">%1$s tin nhắn mới</string>
+
+    <string name="Try_again">Xin thử lại</string>
+    <string name="Image_Pick">Chia sẻ hình ảnh của bạn với JoinIn</string>
+    <string name="Hold_on">Hold on</string>
+    <string name="Loading">Đang chạy&#8230;</string>
+    <string name="Online">online</string>
+    <string name="Offline">offline</string>
+    <string name="No_one_near">Không ai xung quanh bạn lúc này&#8230;</string>
+    <string name="Timeline">Quanh tôi</string>
+    <string name="filter_changed">Thay đổi bộ lọc</string>
+
+    <string name="Continue">Tiếp tục</string>
+    <string name="Deny_permission_try_again">Xin thử lại</string>
+    <string name="Close">Đóng</string>
+    <string name="cancel">THOÁT</string>
+    <string name="distance">Khoảng cách</string>
+    <string name="age_range">Độ tuổi</string>
+    <string name="gender">Giới tính</string>
+    <string name="only_men">Nam</string>
+    <string name="only_women">Nữ</string>
+    <string name="men_and_women">Cả nam và nữ</string>
+    <string name="chat_now">Nhắn tin ngay</string>
+    <string name="hidden_age">giấu tuổi</string>
+    <string name="year_old">" tuổi"</string>
+    <string name="add_activity">Thêm hoạt động</string>
+    <string name="choose_action">Thêm hành động</string>
+    <string name="what_are_you_up_to">Bạn đang nghĩ gì?</string>
+    <string name="post">Đăng bài</string>
+    <string name="you_need_to_find_people_nwe_need_your_current_location_to_help_you_find_friends">Bạn muốn tìm bạn xung quanh? \nHãy chia sẻ vị trí hiện tại của bạn cho chúng tôi.</string>
+    <string name="go_online">Đồng ý</string>
+
+    <string name="atlas_message_composer_hint">Viết tin nhắn</string>
+    <string name="atlas_message_composer_send_button">GỬI</string>
+</resources>

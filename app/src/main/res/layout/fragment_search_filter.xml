@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".vc.fragment.SearchFilterFragment">
+
+    <TextView
+        android:id="@+id/tvSearchFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/filter"
+        android:textColor="@color/colorPrimary_origin1"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tvSearchFilter"
+        android:background="@drawable/done_purple"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSearchFilter"
+        android:paddingBottom="5dp"
+        android:layout_toLeftOf="@+id/btnDone"
+        android:background="@android:color/transparent"
+        android:gravity="bottom"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary_origin1" />
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tvSearchFilter"
+        android:background="@drawable/main_color" />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/border"
+        android:layout_marginTop="30dp"
+        android:text="@string/distance"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/tvDistanceNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500 m"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignBottom="@+id/tvDistance"/>
+
+    <io.apptik.widget.MultiSlider
+        android:id="@+id/sliderDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDistance"
+        android:layout_marginTop="8dp"
+        app:trackColor="@color/black"
+        app:rangeColor="@color/colorPrimary_origin2"
+        app:thumbColor="@color/colorPrimary_origin2"
+        app:range2="@drawable/multislider_scrubber_track_holo_light"
+        app:scaleMax="2000"
+        app:scaleMin="100"
+        app:scaleStep="100"
+        app:thumbValue1="500"
+        app:drawThumbsApart="true"
+        app:thumbNumber="1" />
+
+
+    <TextView
+        android:id="@+id/tvAgeRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sliderDistance"
+        android:layout_marginTop="30dp"
+        android:text="@string/age_range"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvAgeRangeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18 - 22"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignBottom="@+id/tvAgeRange"/>
+
+    <io.apptik.widget.MultiSlider
+        android:id="@+id/sliderAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAgeRange"
+        android:layout_alignLeft="@+id/sliderDistance"
+        app:trackColor="@color/black"
+        app:range1="@drawable/multislider_scrubber_track_holo_light"
+        app:range1Color="@color/colorPrimary_origin2"
+        app:rangeColor="@color/colorPrimary_origin2"
+        app:thumbColor="@color/colorPrimary_origin2"
+        android:layout_marginTop="8dp"
+        app:scaleMax="80"
+        app:scaleMin="18"
+        app:scaleStep="1"
+        app:thumbValue1="18"
+        app:thumbValue2="60"
+        app:drawThumbsApart="true"
+        app:stepsThumbsApart="4"
+        app:thumbNumber="2" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sliderAge"
+        android:layout_marginTop="30dp"
+        android:text="@string/gender"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <com.rey.material.widget.Spinner
+        android:id="@+id/spinnerGender"
+        style="@style/GenderSpinner"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvGender"
+        android:layout_alignParentRight="true"
+        app:spn_labelTextColor="@android:color/secondary_text_light"
+        app:spn_labelTextSize="12dp"
+        app:spn_arrowColor="@color/colorPrimary_origin2"
+        app:spn_dividerColor="@color/colorPrimary_origin2"
+        app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+
+</RelativeLayout>

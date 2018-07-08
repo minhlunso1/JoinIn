@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:atlas="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/main_color_reverse"
+            android:theme="@style/ToolbarTheme" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.layer.atlas.AtlasAddressBar
+        android:id="@+id/conversation_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.layer.atlas.AtlasHistoricMessagesFetchLayout
+        android:id="@+id/historic_sync_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.layer.atlas.AtlasMessagesRecyclerView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/chat_bg"
+            atlas:myBubbleColor="@color/colorPrimary_1"
+            atlas:myTextColor="#ffffff"
+            atlas:myTextSize="14sp"
+            atlas:theirTextSize="14sp"
+            atlas:theirBubbleColor="@color/colorPrimary_2"
+            atlas:theirTextColor="#ffffff" />
+
+    </com.layer.atlas.AtlasHistoricMessagesFetchLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/main_color"/>
+
+    <com.layer.atlas.AtlasMessageComposer
+        android:id="@+id/message_composer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        atlas:inputCursorColor="@color/colorPrimary_1"
+        atlas:inputUnderlineColor="@color/colorPrimary_1"/>
+</LinearLayout>

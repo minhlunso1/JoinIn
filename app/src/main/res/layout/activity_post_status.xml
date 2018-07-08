@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_dashboard" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/edt_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_ava"
+                android:background="@android:color/white"
+                android:gravity="top"
+                android:hint="@string/what_are_you_up_to"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:lines="9"
+                android:maxLines="9"
+                android:padding="8dp"
+                android:scrollbarStyle="insideInset"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_ava"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_ava"
+                android:layout_marginRight="8dp"
+                android:ellipsize="end"
+                android:layout_toRightOf="@+id/img_ava"
+                android:maxLines="3"
+                android:text="Khang Vu"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/img_status_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_status"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/placeholder"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:id="@+id/btnClose"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/com_facebook_close"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/bottom_layout"
+            android:background="@color/grey_1" />
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/img_camera"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_camera"
+                android:src="@drawable/ic_add_a_photo_black_36dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_layout"
+                android:background="@color/grey_1" />
+
+            <ImageView
+                android:id="@+id/img_action"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_camera"
+                android:src="@drawable/ic_sentiment_satisfied_black_36dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_layout"
+                android:background="@color/grey_1" />
+
+            <ImageView
+                android:id="@+id/img_map"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_camera"
+                android:src="@drawable/ic_location_on_black_36dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

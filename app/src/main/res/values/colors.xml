@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary_1">#CC5C258D</color>
+    <color name="colorPrimary_2">#CC42a5f5</color>
+    <color name="colorPrimary_origin1">#5C258D</color>
+    <color name="colorPrimary_origin2">#42a5f5</color>
+
+    <color name="colorPrimaryDark">#5C258D</color>
+    <color name="colorAccent">#ffa726</color>
+    <color name="colorHyperLink">#3366BB</color>
+    <color name="colorDivider">#F5F8FA</color>
+    <color name="black0">#5a6873</color>
+    <color name="black">#212121</color>
+    <color name="grey">#CCeeeeee</color>
+    <color name="grey_1">#594a5c69</color>
+</resources>

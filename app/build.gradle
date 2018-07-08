@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.bluebirdaward.joinin"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.1"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        maven { url "https://raw.githubusercontent.com/layerhq/releases-android/master/releases/" }
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile project(path: ':layer-atlas')
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.google.android.gms:play-services:9.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.5.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.0'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'com.pacioianu.david:ink-page-indicator:1.1.1'
+    compile 'com.parse:parsefacebookutils-v4-android:1.10.4@aar'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.parse:parse-android:1.+'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+    compile 'com.layer.sdk:layer-sdk:0.20.3'
+    compile 'org.slf4j:slf4j-nop:1.5.8'
+    compile 'com.github.ybq:Android-SpinKit:1.0.4'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    compile 'io.apptik.widget:multislider:1.2'
+    compile 'com.github.rey5137:material:1.2.2'
+}
+
+apply plugin: 'com.google.gms.google-services'

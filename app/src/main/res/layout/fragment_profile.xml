@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/htab_maincontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/htab_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/htab_collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@drawable/main_color_origin_reverse"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/htab_header"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+>                <ImageView
+                    android:id="@+id/img_ava"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:maxHeight="86dp"
+                    android:maxWidth="86dp"
+                    android:layout_marginTop="82dp"
+                    android:layout_marginLeft="16dp"
+                    android:scaleType="centerCrop" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_ava"-->
+                    <!--android:layout_width="86dp"-->
+                    <!--android:layout_height="86dp"-->
+                    <!--android:layout_marginTop="82dp"-->
+                    <!--android:layout_marginLeft="16dp"-->
+                    <!--android:transitionName="profile"-->
+                    <!--android:scaleType="centerCrop" />-->
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/img_ava"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@id/img_ava"
+                    android:layout_toRightOf="@id/img_ava"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/img_ava"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/img_ava"
+                    android:layout_toRightOf="@id/img_ava"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/status_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_below="@id/img_ava"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/ic_compose" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="top"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/intro_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/status_layout"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ic_gender"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/ic_bio" />
+
+                    <TextView
+                        android:id="@+id/tv_intro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="top"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/interest_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/intro_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/ic_interest" />
+
+                    <TextView
+                        android:id="@+id/tv_interests"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="top"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="86dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/cb_state_button_blue_state"
+                    android:drawableLeft="@drawable/ic_favorite_filled"
+                    android:gravity="center_vertical"
+                    android:paddingRight="6dp"
+                    android:text="@string/Favourite"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="86dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/cb_state_button_purple_state"
+                    android:drawableLeft="@drawable/ic_send"
+                    android:gravity="center_vertical"
+                    android:paddingRight="6dp"
+                    android:text="@string/Message_"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="86dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/cb_state_button_main_color_state"
+                android:drawableLeft="@drawable/ic_launch_edit"
+                android:gravity="center_vertical"
+                android:paddingRight="6dp"
+                android:text="@string/Edit"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_profile" />
+
+</android.support.design.widget.CoordinatorLayout>
